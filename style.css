@@ -1,0 +1,35 @@
+body {
+    background-color: whitesmoke;
+    min-width: 290px;
+    line-height: 1.5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color:rgb(2, 48, 2);
+}
+
+#page-wrapper {
+    position: relative;
+}
+
+main {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#nav-bar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    min-width: 290px;
+    height: 100%;
+    border-right: solid;
+    border-color: black;
+}
+
+nav li {
+    list-style: none;
+}
