@@ -225,11 +225,12 @@
                         <p>
                                 You cannot declare a constant with the same name as a function or variable in the same scope. For example:
                         </p>
-                        <code>
-                                // THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL
-                                CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements
-                                }
-                        </code>
+                        
+                        <code
+                          >// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL
+                          CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements
+                          }</code
+                        >
                         <p>
                                 However, object attributes are not protected, so the following statement is executed without problems.
                         </p>
@@ -286,9 +287,9 @@
                             <p>
                                     You may also compound the statements using else if to have multiple conditions tested in sequence, as follows:
                             </p>
-                            <code>
-                                    if (condition_1) { statement_1; } else if (condition_2) { statement_2;
-                                    } else if (condition_n) { statement_n; } else { statement_last; }
+                            <code
+                              >if (condition_1) { statement_1; } else if (condition_2) { statement_2;
+                              } else if (condition_n) { statement_n; } else { statement_last; }
                             </code>
                             <p>
                                     In the case of multiple conditions only the first logical condition which evaluates to true will be executed. 

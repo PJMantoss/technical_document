@@ -65,6 +65,31 @@ main > header {
     margin: 0px;
 }
 
+section article {
+    margin: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+}
+
+section li {
+    margin: 10px 0 0 10px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: rgb(223, 221, 219);
+    padding: 15px;
+    margin: 10px;
+    white-space: pre;
+    line-height: 2;
+    word-break: normal;
+    word-wrap: normal;
+    position: relative;
+    border-radius: 5px;
+}
+
 @media (max-width: 650px){
     nav > ul {
         height: 205px;
@@ -82,5 +107,23 @@ main > header {
         z-index: 1;
     }
 
-    main {}
+    main {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 250px;
+    }
+}
+
+@media (max-width: 400px){
+    main {
+        margin-left: -10px;
+    }
+
+    code {
+        margin-left: -20px;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 45px;
+        min-width: 230px;
+    }
 }
