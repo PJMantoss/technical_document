@@ -9,7 +9,6 @@
     <title>Technical Document</title>
 </head>
 <body>
-    <div id="page-wrapper">
         <nav id="navbar">
             <header>JS Documentation</header>
             <ul>
@@ -114,10 +113,13 @@
                                 To get started with writing JavaScript, 
                                 open the Scratchpad and write your first "Hello world" JavaScript code:
                         </p>
-                        <code>
-                                function greetMe(yourName) { alert("Hello " + yourName); }
-                                greetMe("World");
-                        </code>
+                        <pre>
+                            <code>
+                            function greetMe(yourName) { alert("Hello " + yourName); }
+                            greetMe("World");
+                            </code>
+                        </pre>
+                        
                         <p>
                                 Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!
                         </p>
@@ -150,13 +152,20 @@
                 <article>
                     <p>You can declare a variable in three ways:</p>
                     <p>With the keyword var. For example,</p>
-                    <code>var x = 42.</code>
+                    <pre>
+                        <code>var x = 42.</code>
+                    </pre>
+                    
                     <p>This syntax can be used to declare both local and global variables.</p>
                     <p>By simply assigning it a value. For example,</p>
-                    <code>x = 42.</code>
+                    <pre>
+                        <code>x = 42.</code>
+                    </pre>
+                    
                     <p>This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.</p>
                     <p>With the keyword let. For example,</p>
-                    <code>let y = 13.</code>
+                    <pre><code>let y = 13.</code></pre>
+                    
                     <p>This syntax can be used to declare a block scope local variable. See Variable scope below.</p>
                 </article>
             </section>
@@ -181,10 +190,12 @@
                         <p>
                                 This behavior changes, when using the let declaration introduced in ECMAScript 2015.
                         </p>
-                        <code>
+                        <pre>
+                            <code>
                                 if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
                                 defined
-                        </code>
+                            </code>
+                        </pre>
                     </article>
             </section>
 
@@ -213,7 +224,7 @@
                                 it must start with a letter, underscore or dollar sign and can contain alphabetic, 
                                 numeric, or underscore characters.
                         </p>
-                        <code>const PI = 3.14;</code>
+                        <pre><code>const PI = 3.14;</code></pre>
                         <p>
                                 A constant cannot change value through assignment or be re-declared 
                                 while the script is running. It has to be initialized to a value.
@@ -226,15 +237,17 @@
                                 You cannot declare a constant with the same name as a function or variable in the same scope. For example:
                         </p>
                         
-                        <code
-                          >// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL
-                          CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements
-                          }</code
-                        >
+                        <pre>
+                                <code>
+                                // THIS WILL CAUSE AN ERROR function f() {}; const f = 5; 
+                                // THIS WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements }
+                                </code>
+                        </pre>
+                        
                         <p>
                                 However, object attributes are not protected, so the following statement is executed without problems.
                         </p>
-                        <code>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";</code>
+                        <pre><code>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";</code></pre>
                     </article>
             </section>
             
@@ -277,7 +290,7 @@
                                     Use the optional else clause to execute a statement if the condition is false. 
                                     An if statement looks as follows:
                             </p>
-                            <code>if (condition) { statement_1; } else { statement_2; }</code>
+                            <pre><code>if (condition) { statement_1; } else { statement_2; }</code></pre>
                             <p>
                                     condition can be any expression that evaluates to true or false. 
                                     See Boolean for an explanation of what evaluates to true and false. 
@@ -296,12 +309,15 @@
                                     To execute multiple statements, group them within a block statement ({ ... }) . In general, it's good practice 
                                     to always use block statements, especially when nesting if statements:
                             </p>
-                            <code>
-                                    if (condition) { statement_1_runs_if_condition_is_true;
-                                        statement_2_runs_if_condition_is_true; } else {
-                                        statement_3_runs_if_condition_is_false;
-                                        statement_4_runs_if_condition_is_false; }
-                            </code>
+                            <pre>
+                                <code>
+                                        if (condition) { statement_1_runs_if_condition_is_true;
+                                            statement_2_runs_if_condition_is_true; } else {
+                                            statement_3_runs_if_condition_is_false;
+                                            statement_4_runs_if_condition_is_false; }
+                                </code>
+                            </pre>
+                            
                             <p>
                                     It is advisable to not use simple assignments in a conditional expression, because the assignment can be confused 
                                     with equality when glancing over the code. For example, do not use the following code:
@@ -393,7 +409,6 @@
                     </article>
             </section>
         </main>
-    </div>
     
 </body>
 </html>

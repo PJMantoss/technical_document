@@ -10,10 +10,6 @@ a {
     cursor: pointer;
 }
 
-#page-wrapper {
-    position: relative;
-}
-
 header {
     font-size: 30px;
     font-family: 'Oswald', sans-serif;
@@ -80,9 +76,8 @@ code {
     text-align: left;
     font-family: 'Titillium Web', sans-serif;
     background-color: rgb(223, 221, 219);
-    padding: 15px;
-    margin: 10px;
-    white-space: pre;
+    padding: 5px;
+    margin: 5px 8px 5px 8px;
     line-height: 2;
     word-break: normal;
     word-wrap: normal;
@@ -97,11 +92,12 @@ code {
     }
 
     nav {
-        max-height: 250px;
+        max-height: 270px;
         width: 100%;
-        top: 0px;
-        margin: 0px;
-        padding: 0px;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        border: none;
         border-bottom: 2px soild;
         position: absolute;
         z-index: 1;
@@ -110,7 +106,7 @@ code {
     main {
         position: relative;
         margin-left: 0px;
-        margin-top: 250px;
+        margin-top: 270px;
     }
 }
 
