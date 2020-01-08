@@ -2,25 +2,25 @@ body {
     background-color: whitesmoke;
     min-width: 290px;
     line-height: 1.5;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 a {
     text-decoration: none;
-    color:rgb(2, 48, 2);
+    color:rgb(2, 68, 2);
+    cursor: pointer;
 }
 
 #page-wrapper {
     position: relative;
 }
 
-main {
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
+header {
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    margin: 10px;
 }
 
-#nav-bar {
+nav {
     position: fixed;
     top: 0px;
     left: 0px;
@@ -30,6 +30,57 @@ main {
     border-color: black;
 }
 
+nav > header {
+    text-align: center;
+}
+
+nav > ul {
+    height: 90%;
+    padding: 1px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
 nav li {
+    width: 100%;
+    position: relative;
     list-style: none;
+    border-top: 1px solid black;
+    color: rgb(0, 53, 0);
+    padding: 15px;
+    font-size: 17px;
+}
+
+main {
+    width: 100%;
+    max-width: 1000px;
+    margin-left: 310px;
+    padding: 15px;
+    position: absolute;
+    margin-bottom: 100px;
+}
+
+main > header {
+    text-align: left;
+    margin: 0px;
+}
+
+@media (max-width: 650px){
+    nav > ul {
+        height: 205px;
+        border: 1px solid;
+    }
+
+    nav {
+        max-height: 250px;
+        width: 100%;
+        top: 0px;
+        margin: 0px;
+        padding: 0px;
+        border-bottom: 2px soild;
+        position: absolute;
+        z-index: 1;
+    }
+
+    main {}
 }
